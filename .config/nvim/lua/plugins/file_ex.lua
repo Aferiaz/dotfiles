@@ -8,8 +8,8 @@ return {
     delete_to_trash = true,
     view_options = {
       float = {
-        max_width = 0.6,
-        max_height = 0.6,
+        max_width = 0.3,
+        max_height = 0.3,
       },
     },
   },
