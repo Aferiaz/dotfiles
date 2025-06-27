@@ -12,3 +12,5 @@
 
 test -s ~/.alias && . ~/.alias || true
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+export MANPATH="$HOME/.local/share/man:$MANPATH"
+export MANPAGER="nvim -c 'set ft=man' -c 'nnoremap q :q<CR>' +Man!"
