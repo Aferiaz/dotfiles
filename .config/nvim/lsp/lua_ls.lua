@@ -5,7 +5,7 @@ return {
   filetypes = {
     "lua",
   },
-  root_markets = {
+  root_markers = {
     ".luaroot"
   },
   single_file_support = true,

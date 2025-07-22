@@ -1,6 +1,7 @@
 vim.lsp.enable({
   "lua_ls",
   "sv_ls",
+  "arduino_ls",
 })
 vim.diagnostic.config({
   virtual_lines = true,
