@@ -14,3 +14,14 @@ test -s ~/.alias && . ~/.alias || true
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 export MANPATH="$HOME/.local/share/man:$MANPATH"
 export MANPAGER="nvim -c 'set ft=man' -c 'nnoremap q :q<CR>' +Man!"
+
+# NOTE: For Private Credentials
+if [ -f ~/.private/.bash_private ]; then
+    source ~/.private/.bash_private
+fi
+
+# NOTE: For better shell experience
+fastfetch
+
+# NOTE: To avoid accidental exit via <C-d>
+IGNOREEOF=9999
