@@ -13,16 +13,5 @@ vim.cmd("set number")
 vim.wo.relativenumber = true
 
 -- Custom Work Arounds
---- Clipboard on Wayland
-vim.g.clipboard = {
-  name = "shared-clipboard",
-  copy = {
-    ["+"] = "wl-copy",
-    ["*"] = "wl-copy",
-  },
-  paste = {
-    ["+"] = "wl-paste --no-newline",
-    ["*"] = "wl-paste --no-newline",
-  },
-  cache_enabled = true,
-}
+-- Clipboard Configuration
+require('config.utils.clipboard').setup()
